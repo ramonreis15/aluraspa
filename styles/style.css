@@ -1,0 +1,279 @@
+html, body {
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  padding: 1rem;
+}
+nav ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  color: #867070;
+}
+nav ul li a:hover {
+  color: #D5B4B4;
+}
+
+.banner {
+  background: url(../imagens/banner.jpeg) 27% center no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .inner-banner {
+  padding: 5rem 2rem;
+  background-color: #E4D0D0;
+  opacity: 0.9;
+  border-radius: 45px;
+}
+.banner .inner-banner h1 {
+  font-size: 3rem;
+  color: #867070;
+}
+.banner .inner-banner h2 {
+  font-size: 1.5rem;
+  color: #D5B4B4;
+  font-weight: 500;
+}
+
+#servicos {
+  margin: 80px;
+}
+#servicos h3 {
+  font-size: 1.2rem;
+  color: #D5B4B4;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem;
+}
+#servicos h4 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 80px;
+  font-weight: 300;
+}
+#servicos .cards {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.2rem;
+}
+#servicos .cards .card {
+  width: 30vw;
+  text-align: center;
+}
+#servicos .cards .card .img-container {
+  padding-bottom: 1rem;
+  border-bottom: 6px solid #D5B4B4;
+}
+#servicos .cards .card .img-container img {
+  max-width: 100%;
+}
+#servicos .cards .card h5 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: 1.5rem;
+  margin-bottom: 1.75rem;
+  color: #867070;
+}
+#servicos .cards .card p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #867070;
+  line-height: 1.25rem;
+  text-align: left;
+  margin-left: .5rem;
+}
+
+#cupom {
+  background-color: #E4D0D0;
+  padding: 4rem;
+  text-align: center;
+}
+#cupom .texto {
+  color: #867070;
+}
+#cupom .texto h2 {
+  margin: 2rem;
+  font-size: 2rem;
+}
+#cupom .input {
+  margin: 0 auto;
+  width: 25vw;
+  border-radius: 20px;
+  border: 4px solid white;
+  background: white;
+}
+#cupom .input input {
+  border-radius: 20px;
+  height: 100%;
+  border: none;
+  width: 100%;
+  outline: none;
+  text-align: center;
+  font-size: 26px;
+}
+#cupom .input:hover, #cupom .input:focus-within {
+  box-shadow: 1px 1px 8px 1px #867070;
+  outline: none;
+}
+#cupom button {
+  margin-top: 0.75rem;
+  outline: none;
+  height: 2rem;
+  text-align: center;
+  width: 8vw;
+  background-color: #867070;
+  color: #D5B4B4;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid #D5B4B4;
+  border-radius: 40px;
+}
+#cupom button:hover {
+  background-color: transparent;
+  transform: scale(1.1);
+}
+
+footer {
+  text-align: center;
+  font-size: 1.5rem;
+  border-top: 2px solid #867070;
+  margin-top: 1rem;
+  padding: 1.2rem;
+  background: linear-gradient(to left, #867070, #D5B4B4, #E4D0D0, #867070);
+}
+footer i {
+  color: black;
+}
+
+.descricao {
+  padding: 1rem;
+  text-align: center;
+  margin: 0.5rem;
+}
+.descricao h3 {
+  color: #867070;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+.descricao h4 {
+  color: #D5B4B4;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+.descricao p {
+  margin-top: 0.5rem;
+  color: #867070;
+}/*# sourceMappingURL=style.css.map */
+
+
+@media screen and (max-width: 700px) {
+  
+  .banner .inner-banner h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        width: 100%;
+  }
+
+  .banner .inner-banner h2 {
+      font-size: 1rem;
+      font-weight: bold;
+      width: 100%;
+  }
+
+  nav ul li {
+    padding: 1rem .1rem;
+    text-align: center;
+  }
+  
+  #servicos {
+    margin: 0px;
+  }
+
+  #servicos h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+    font-weight: bold;
+  }
+
+  #servicos h4 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 5px 1px 10px 1px;
+  }
+
+  #servicos .cards .card h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+
+  #servicos .cards .card p {
+    font-size: .8rem;
+    font-weight: bold;
+    margin-left: .1rem;
+    text-align: left;
+  }
+  
+  #cupom {
+    width: 100%;
+    padding: 0%;
+  }
+
+  .texto {
+    padding: 1.5rem 0;
+  }
+
+  #cupom .texto h2 {
+    font-size: 1.3rem;
+    margin: 0rem 0rem;
+  }
+
+  #cupom .input {
+    width: 30vh;
+  }
+
+  #cupom .input input  {
+    font-size: 1rem;
+  }
+
+  #cupom button {
+    width: 15vh;
+    margin: 1rem 0;
+ }
+
+ .descricao img {
+  width: 70%;
+ }
+
+ .descricao h3 {
+  padding: 10px 0;
+ }
+
+ .descricao h4 {
+  padding: 5px 0;
+ }
+
+ .descricao p {
+  padding: 5px 0;
+ }
+
+ footer {
+  font-size: 1rem;
+  font-weight: bold;
+ }
+
+} 
